@@ -1,0 +1,33 @@
+[
+    {
+      "datetime": 1692666930,
+      "millibars": 1025,
+      "inHg": 30.23
+    },
+    {
+      "datetime": 1692666930,
+      "millibars": 1030,
+      "inHg": 30.4
+    },
+    {
+      "datetime": 1692666930,
+      "millibars": 1010,
+      "inHg": 29.1
+    },
+    {
+      "datetime": 1692666930,
+      "millibars": 890,
+      "inHg": 29
+    },
+    {
+      "datetime": 1692666930,
+      "millibars": 1000,
+      "inHg": 28.7
+    },
+    {
+      "datetime": 1692666930,
+      "millibars": 1010,
+      "inHg": 29.5
+    }
+]
+

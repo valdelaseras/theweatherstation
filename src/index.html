@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8" />
+    <title>The Weather Station</title>
+
+    <link rel="stylesheet" href="./index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script defer src="./scripts/components/c-section.js"></script>
+    <script defer src="./scripts/components/c-table.js"></script>
+</head>
+<body>
+<main>
+    <c-section id="barometer">
+        <section>
+            <div class="grid">
+                <div class="column">
+                    <div class="column">
+                        <header class="section-header">
+                            <div class="content">
+                                <h2 class="section-title"></h2>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <c-table data-source="barometer-data"></c-table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </c-section>
+    <c-section id="temperature">
+        <section>
+            <div class="grid">
+                <div class="column">
+                    <div class="column">
+                        <header class="section-header">
+                            <div class="content">
+                                <h2 class="section-title"></h2>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <c-table data-source="temperature-data"></c-table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </c-section>
+</main>
+</body>
+</html>
