@@ -2,9 +2,9 @@
 
 import Formatter from '../shared/Formatter.js';
 
-export default class BarometerService {
+export default class HygrometerService {
     async get(){
-        const response = await fetch(`./data/barometer-data.json`);
+        const response = await fetch(`./data/hygrometer-data.json`);
         return response.json().then(this.getFormattedData)
     }
     create(){}
@@ -12,8 +12,8 @@ export default class BarometerService {
     getFormattedData(data){
         return data.map((item) => {
             return {
-                ...item,
-                datetime: Formatter.epochToReadableDate(item.datetime)
+                datetime: Formatter.epochToReadableDate(item.datetime),
+                humidity: item.humidity += `%`
             };
         })
     }

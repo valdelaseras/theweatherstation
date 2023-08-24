@@ -1,23 +1,33 @@
-import BarometerService from "./scripts/service/Barometer.service.js";
-import TemperatureService from "./scripts/service/Temperature.service.js";
 import {CTable} from "./scripts/components/c-table.js";
 
-let barometerService, temperatureService;
+import BarometerService from "./scripts/service/Barometer.service.js";
+import ThermometerService from "./scripts/service/Thermometer.service.js";
+import HygrometerService from "./scripts/service/Hygrometer.service.js";
+import AnemometerService from "./scripts/service/Anemometer.service.js";
+
+let barometerService,
+    thermometerService,
+    hygrometerService,
+    anemometerService
 
 window.onload = () => {
     barometerService = new BarometerService();
-    temperatureService = new TemperatureService();
+    thermometerService = new ThermometerService();
+    hygrometerService = new HygrometerService();
+    anemometerService = new AnemometerService();
 
     build();
 }
 
 const build = () => {
     buildTable( 'barometer', barometerService );
-    buildTable( 'temperature', temperatureService );
+    buildTable( 'thermometer', thermometerService );
+    buildTable( 'anemometer', anemometerService );
+    buildTable( 'hygrometer', hygrometerService );
 }
 
 const buildTable = ( id, service ) => {
-    const slot =  document.querySelector(`#${id} slot[name="table-slot"]`);
+    const slot =  document.querySelector(`#${id} .section-table`);
     const table = new CTable( service );
     slot.append(table);
 }

@@ -1,0 +1,22 @@
+[
+  {
+    "datetime": 1692666930000,
+    "knots": 19,
+    "direction": "s"
+  },
+  {
+    "datetime": 1692666930000,
+    "knots": 29,
+    "direction": "s"
+  },
+  {
+    "datetime": 1692666930000,
+    "knots": 27,
+    "direction": "se"
+  },
+  {
+    "datetime": 1692666930000,
+    "knots": 0,
+    "direction": "-"
+  }
+]

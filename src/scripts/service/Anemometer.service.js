@@ -2,9 +2,9 @@
 
 import Formatter from '../shared/Formatter.js';
 
-export default class BarometerService {
+export default class AnemometerService {
     async get(){
-        const response = await fetch(`./data/barometer-data.json`);
+        const response = await fetch(`./data/anemometer-data.json`);
         return response.json().then(this.getFormattedData)
     }
     create(){}
@@ -13,7 +13,8 @@ export default class BarometerService {
         return data.map((item) => {
             return {
                 ...item,
-                datetime: Formatter.epochToReadableDate(item.datetime)
+                direction: item.direction.toUpperCase(),
+                datetime: Formatter.epochToReadableDate(item.datetime),
             };
         })
     }

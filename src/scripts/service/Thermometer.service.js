@@ -2,15 +2,15 @@
 
 import Formatter from '../shared/Formatter.js';
 
-export default class TemperatureService {
+export default class ThermometerService {
     async get() {
-        const response = await fetch(`./data/temperature-data.json`);
-        return response.json().then(this.formatData)
+        const response = await fetch(`./data/thermometer-data.json`);
+        return response.json().then(this.getFormattedData)
     }
 
     create(){}
 
-    formatData(data){
+    getFormattedData(data){
         return data.map((item) => {
             return {
                 datetime: Formatter.epochToReadableDate(item.datetime),
