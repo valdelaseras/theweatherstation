@@ -1,18 +1,19 @@
 'use strict';
 
-class CTable extends HTMLElement {
-    constructor( ) {
+export class CTable extends HTMLElement {
+    constructor( service ) {
         super();
 
+        this.service = service;
         this.data = [];
     }
 
     connectedCallback() {
-        const dataSource = this.getAttribute('data-source');
+        this.data = this.service.get()
 
-        this.getData(dataSource)
-            .then((data) => { this.data = data; })
-            .finally(() =>  this.buildTable())
+        this.service.get()
+            .then((data) => { this.data = data })
+            .finally(() => this.buildTable());
     }
 
     buildTable() {
@@ -64,12 +65,6 @@ class CTable extends HTMLElement {
 
     buildTableRow() {
         return document.createElement('tr');
-    }
-
-    // @TODO: move to a service eventually
-    async getData(fileName) {
-        const response = await fetch(`./data/${fileName}.json`);
-        return response.json();
     }
 }
 

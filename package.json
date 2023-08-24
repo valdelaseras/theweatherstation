@@ -31,5 +31,6 @@
     "@electron-forge/plugin-auto-unpack-natives": "^6.4.1",
     "@valdelaseras/pedestal": "^2.0.10",
     "electron": "26.0.0"
-  }
+  },
+  "type": "module"
 }

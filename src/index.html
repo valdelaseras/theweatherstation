@@ -7,51 +7,55 @@
     <link rel="stylesheet" href="./index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script defer src="./scripts/components/c-section.js"></script>
-    <script defer src="./scripts/components/c-table.js"></script>
+    <script defer src="./scripts/components/c-section.js" type="module"></script>
+    <script defer src="./scripts/components/c-table.js" type="module"></script>
+
+    <script defer src="./build.js" type="module"></script>
 </head>
 <body>
-<main>
-    <c-section id="barometer">
-        <section>
-            <div class="grid">
-                <div class="column">
+    <main>
+        <c-section id="barometer">
+            <section>
+                <div class="grid">
                     <div class="column">
-                        <header class="section-header">
+                        <div class="column">
+                            <header class="section-header">
+                                <div class="content">
+                                    <h2 class="section-title"></h2>
+                                </div>
+                            </header>
+                        </div>
+                        <div class="column">
                             <div class="content">
-                                <h2 class="section-title"></h2>
+                                <slot name="table-slot"></slot>
                             </div>
-                        </header>
-                    </div>
-                    <div class="column">
-                        <div class="content">
-                            <c-table data-source="barometer-data"></c-table>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </c-section>
-    <c-section id="temperature">
-        <section>
-            <div class="grid">
-                <div class="column">
+            </section>
+        </c-section>
+        <c-section id="temperature">
+            <section>
+                <div class="grid">
                     <div class="column">
-                        <header class="section-header">
+                        <div class="column">
+                            <header class="section-header">
+                                <div class="content">
+                                    <h2 class="section-title"></h2>
+                                </div>
+                            </header>
+                        </div>
+                        <div class="column">
                             <div class="content">
-                                <h2 class="section-title"></h2>
+                                <slot name="table-slot"></slot>
                             </div>
-                        </header>
-                    </div>
-                    <div class="column">
-                        <div class="content">
-                            <c-table data-source="temperature-data"></c-table>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </c-section>
-</main>
+            </section>
+        </c-section>
+    </main>
 </body>
+
+
 </html>
