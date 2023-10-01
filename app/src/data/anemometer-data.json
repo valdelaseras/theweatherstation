@@ -18,5 +18,15 @@
     "datetime": 1692666930000,
     "knots": 0,
     "direction": "-"
+  },
+  {
+    "datetime": 1692666930000,
+    "knots": 32,
+    "direction": "W"
+  },
+  {
+    "datetime": 1692666930000,
+    "knots": 25,
+    "direction": "E"
   }
 ]

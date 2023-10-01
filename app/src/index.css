@@ -262,7 +262,7 @@ body {
   font-size: 16px;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 800px) {
   body {
     font-size: 18px;
   }
@@ -330,7 +330,7 @@ ul {
 }
 
 /* mobile only */
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 800px) {
   .mobile-only {
     display: none;
   }
@@ -340,7 +340,7 @@ ul {
   display: none;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 800px) {
   .desktop-only {
     display: inline-block;
   }
@@ -366,7 +366,7 @@ nav, footer {
   visibility: hidden;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 800px) {
   .column.phi.a {
     width: 38%;
   }
@@ -400,7 +400,7 @@ nav, footer {
   text-align: center;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 800px) {
   .reverse-on-desktop {
     display: flex;
     flex-direction: row-reverse;
@@ -411,7 +411,7 @@ nav, footer {
   padding: 10px;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 800px) {
   .content {
     padding: 16.18px;
   }
@@ -422,7 +422,7 @@ nav, footer {
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 800px) {
   .grid {
     width: 80vw;
     max-width: 80vw;
@@ -575,7 +575,7 @@ select:hover {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 800px) {
   select {
     font-size: 18px;
   }
@@ -589,7 +589,7 @@ input {
   font-size: 16px;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 800px) {
   input {
     font-size: 18px;
   }
@@ -705,7 +705,7 @@ textarea.theme-secondary.bordered {
   border-color: rgb(255, 255, 255);
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 800px) {
   textarea {
     font-size: 18px;
   }

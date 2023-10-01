@@ -1,4 +1,5 @@
-import {CTable} from "./scripts/components/c-table.js";
+import {CTable} from "./scripts/components/c-table.mjs";
+import "reflect-metadata"; // @TODO
 
 import BarometerService from "./scripts/service/Barometer.service.js";
 import ThermometerService from "./scripts/service/Thermometer.service.js";
@@ -27,7 +28,7 @@ const build = () => {
 }
 
 const buildTable = ( id, service ) => {
-    const slot =  document.querySelector(`#${id} .section-table`);
+    const target =  document.querySelector(`#${id} .section-table`);
     const table = new CTable( service );
-    slot.append(table);
+    target.append(table);
 }

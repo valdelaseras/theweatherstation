@@ -14,5 +14,13 @@
   {
     "datetime": 1692666930000,
     "humidity": 30
+  },
+  {
+    "datetime": 1692666930000,
+    "humidity": 77
+  },
+  {
+    "datetime": 1692666930000,
+    "humidity": 63
   }
 ]

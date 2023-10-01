@@ -1,4 +1,6 @@
-class CForm extends HTMLElement {
+'use strict';
+
+export class CForm extends HTMLElement {
     constructor() {
         super();
     }
